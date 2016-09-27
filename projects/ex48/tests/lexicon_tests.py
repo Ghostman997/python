@@ -2,7 +2,7 @@ from nose.tools import *
 from ex48 import lexicon
 
 def test_directions():
-    pass 
+    assert_equal(lexicon.scan("ASDFADFASDF"), [('error', 'ASDFADFASDF')] 
 
 def teardown():
     print "TEAR DOWN!"
