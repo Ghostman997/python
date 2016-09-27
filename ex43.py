@@ -95,6 +95,7 @@ class LaserWeaponArmory(Scene):
         guesses = 0
 
        #make it fallout like
+       #make 2 arrays that store code and guess every time and then iterate through it by using 2 for loops
         while guess != code and guesses < 9:
             print "BZZZZEDDD!"
             guesses += 1
