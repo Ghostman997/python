@@ -1,9 +1,11 @@
-def scan():
-      north = ('direction', 'north')
-      south = ('direction', 'south')
-      east = ('direction', 'east')
-      west = ('direction', 'west')
+def scan(s):
+      directions = ('north', 'south', 'east', 'west')
+      for dir in directions:
+        if dir == s:
+            return('direction', dir)
+        return ('error', None)
 
-print north
+
+#print scan('north')
 
 
