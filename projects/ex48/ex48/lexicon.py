@@ -12,37 +12,44 @@ def scan(s):
             if dir == sin:
                 sout.append(('direction', dir))
                 found = 1
+                print sin
                 break
         for ver in verbs:
             if ver == sin:
                 sout.append(('verb', ver))
                 found = 1
+                print sin
                 break
         for sto in stops:
             if sto == sin:
                 sout.append(('stop', sto))
                 found = 1
+                print sin
                 break
         for nou in nouns:
             if nou == sin:
                 sout.append(('noun', nou))
                 found = 1
+                print sin
                 break
         try:
             numbers = int(sin)
             sout.append(('number', numbers))
             found = 1
+            print sin
             break
         except ValueError:
             pass
         if found == 0:
             # return [('direction',dir)]
             sout.append(('error', sin))
+   #print s
+   #print sin
     return sout
 
-#print scan('north east south')
-#print scan('go eat kill')
-#print scan('the in of')
-#print scan('bear princess')
+print scan('north east south')
+print scan('go eat kill')
+print scan('the in of')
+print scan('bear princess')
 print scan('bear IAS princess')
 print scan("3 91234")
